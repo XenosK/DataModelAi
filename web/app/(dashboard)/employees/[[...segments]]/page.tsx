@@ -8,12 +8,16 @@ import { employeesDataSource, Employee, employeesCache } from '../../../../data/
 
 
 export default function EmployeesCrudPage() {
-  
+
   const params = useParams();
   const [employeeId] = params.segments ?? [];
-  
-  
-  
+
+
+  // console.log(employeesDataSource);
+
+
+
+    // const resJson = res.json();
 
   return (
     <Crud<Employee>

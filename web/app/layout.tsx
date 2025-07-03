@@ -22,13 +22,13 @@ const NAVIGATION: Navigation = [
     kind: 'divider'
   },
   {
-    segment: 'datamodel',
-    title: '建表',
+    segment: 'warehouse',
+    title: '仓库',
     icon: <DashboardIcon />,
   },
   {
-    segment: 'warehouse',
-    title: '仓库',
+    segment: 'datamodel',
+    title: '建表',
     icon: <DashboardIcon />,
   },
   {
@@ -47,7 +47,7 @@ const NAVIGATION: Navigation = [
     segment: 'mcp',
     title: 'Mcp',
     icon: <PersonIcon />,
-    pattern: 'employees{/:employeeId}*',
+    // pattern: 'employees{/:employeeId}*',
   },
   {
     segment: 'employees',
@@ -64,25 +64,25 @@ const BRANDING = {
 
 
 export default function RootLayout(props: { children: React.ReactNode }) {
-  
+
 
   return (
     <html lang="en" data-toolpad-color-scheme="light" suppressHydrationWarning>
       <body>
-        
+
           <AppRouterCacheProvider options={{ enableCssLayer: true }}>
           <React.Suspense fallback={<LinearProgress />}>
             <NextAppProvider
               navigation={NAVIGATION}
               branding={BRANDING}
-              
+
               theme={theme}
             >
               {props.children}
             </NextAppProvider>
             </React.Suspense>
           </AppRouterCacheProvider>
-        
+
       </body>
     </html>
   );
