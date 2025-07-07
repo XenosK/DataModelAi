@@ -18,6 +18,7 @@
     "next": "^15",
     "react": "^19",
     "react-dom": "^19",
+    "react-flow": "^1.0.3",
     "zod": "^3.24.2"
   },
   "devDependencies": {
