@@ -7,6 +7,7 @@ import LinearProgress from '@mui/material/LinearProgress'
 import type { Navigation } from '@toolpad/core/AppProvider';
 
 import theme from '../theme';
+import { usePathname } from 'next/navigation';
 
 export const metadata = {
   title: 'My Toolpad Core Next.js App',

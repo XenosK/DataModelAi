@@ -144,3 +144,8 @@ dist-ssr
 .yarn/unplugged
 .yarn/build-state.yml
 .yarn/install-state.gz
+
+#venv
+.venv
+db.json
+__pycache__
